@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Car Driving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sliders-container">
+        <h3>Parâmetros</h3>
+        <div id="sliders">
+            <div class="slider-div">
+                <label>Carros</label>
+                <input class="slider" type="range" value="100" min="0" max="500" step="10">
+                <span>100</span></br>
+            </div>
+            <div class="slider-div">
+                <label>Níveis</label>
+                <input class="slider" type="range" value="10" min="0" max="50" step="5">
+                <span>10</span></br>
+            </div>
+            <div class="slider-div">                
+                <label>Mutação</label>
+                <input class="slider" type="range" value="0.2" min="0" max="1" step="0.05">
+                <span>0.2</span></br>
+            </div>
+        </div>
+        <button id="save" onclick="saveValues()">💾</button>
+        <button id="delete" onclick="deleteValues()">🗑️</button>
+    </div>
+    <canvas id="MyCanvas"></canvas>
+    <div id="verticalButtons">
+        <button id="save" onclick="save()">💾</button>
+        <button id="delete" onclick="discard()">🗑️</button>
+        <button id="control" onclick="setControl(true)">🎮</button>
+        <button id="ia" onclick="setControl(false)">🤖</button>
+    </div>
+    <canvas id="netCanvas"></canvas>
+    <script src="scripts/car.js"></script>
+    <script src="scripts/visualizer.js"></script>
+    <script src="scripts/network.js"></script>
+    <script src="scripts/sensor.js"></script>
+    <script src="scripts/road.js"></script>
+    <script src="scripts/controls.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

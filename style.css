@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background: darkgray;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+}
+
+label, span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#control:hover{
+    background: rgba(59, 137, 255, 0.5);
+}
+
+#save:hover {
+    background: rgba(86, 255, 43, 0.5);
+}
+
+#delete:hover {
+    background: rgba(255, 40, 75, 0.5);
+}
+
+#ia:hover {
+    background: rgba(255, 255, 43, 0.5);
+}
+
+#sliders-container{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+#sliders {
+    width: 200px;
+    justify-self: center;
+    padding-top: 24px;
+}
+
+.slider {
+    margin: 8px;
+    -webkit-appearance: none; /* Remove a aparência padrão do navegador */
+    appearance: none;
+    width: 100%;
+    height: 10px; /* Altura da barra */
+    background: #ddd; /* Cor de fundo */
+    outline: none; /* Remove o contorno ao focar */
+    opacity: 0.7; /* Opacidade */
+    -webkit-transition: .2s; /* Transição suave */
+    transition: opacity .2s;
+}
+
+.slider-div{
+    margin-bottom: 8px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Largura do "thumb" (controle deslizante) */
+    height: 20px; /* Altura do "thumb" */
+    background: rgba(59, 137, 255, 0.5); /* Cor do "thumb" */
+    cursor: pointer;
+    border-radius: 50%; /* Deixa o "thumb" redondo */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: rgba(59, 137, 255, 0.5);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}
+
+#MyCanvas{
+    background: lightgray;
+}
+
+#netCanvas {
+    margin-left: 10%;
+    background: black;
+}
