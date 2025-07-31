@@ -4,6 +4,8 @@ Um projeto de simulação 2D desenvolvido em JavaScript puro, HTML e CSS, que ut
 
 <img width="375" height="209" alt="image" src="https://github.com/user-attachments/assets/a791541a-7331-4be8-9a58-8647c896ef2b" />
 
+<img width="375" height="210" alt="image" src="https://github.com/user-attachments/assets/0f5213d7-ea73-4739-ac0f-05b312fa9408" />
+
 -----
 
 ## 🚀 Funcionalidades
